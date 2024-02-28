@@ -74,8 +74,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun fetchdata() {
         progressBar.visibility = ProgressBar.VISIBLE
-        Handler().postDelayed({
-                              for(i in 0..4){
+        Handler().postDelayed({                                    // adding 5 new random numbers on a delay of
+                              for(i in 0..4){             //2 seconds to the arrayList
                                   var num =Math.floor(Math.random()*100)
                                   arrnumber.add(Model(num.toInt()))
                                   recyclerAdapter.notifyDataSetChanged()
